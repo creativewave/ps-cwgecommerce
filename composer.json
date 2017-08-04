@@ -1,0 +1,37 @@
+{
+  "name": "creativewave/ps-cwgecommerce",
+  "description": "Prestashop module for sending data to Google Analytics and Adwords via Google Tag Manager.",
+  "type": "prestashop-module",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Guillaume Lebas",
+      "email": "contact@creative-wave.fr"
+    }
+  ],
+  "autoload": {
+    "classmap": ["classes/"]
+  },
+  "extra": {
+    "installer-name": "cwgecommerce"
+  },
+  "dist": {
+      "type": "zip",
+      "url": "https://github.com/creativewave/ps-cwgecommerce/releases/download/v1.0.0/cwgecommerce.zip"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/creativewave/ps-module-configuration"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1",
+    "creativewave/ps-module-configuration": "^1",
+    "php": "^7"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2",
+    "phpunit/phpunit": "^6"
+  }
+}
